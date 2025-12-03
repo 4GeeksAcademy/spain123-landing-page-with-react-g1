@@ -1,15 +1,22 @@
-import React from 'react';
-export const Card = () => {
-    return (
-    
-        <div className="card bg-black text-light" style={{width: '18rem'}}>
-        <img src="../src/img/rigo-baby.jpg" className="card-img-top" alt="..."/>
-            <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-        </div>    
-</div>
-)
-}
+import React from "react";
+import imgRigo from "../../img/rigo-baby.jpg"; // <-- ruta corregida
+
+const Card = () => {
+  return (
+    <div className="card bg-black text-light" style={{ width: "18rem" }}>
+      <img src={imgRigo} className="card-img-top" alt="Rigo Baby" />
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">
+          Some quick example text to build on the card title and make up the bulk
+          of the card’s content.
+        </p>
+        <a href="#" className="btn btn-primary">
+          Go somewhere
+        </a>
+      </div>
+    </div>
+  );
+};
+
 export default Card;
